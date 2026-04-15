@@ -1,0 +1,82 @@
+.experience-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  overflow: hidden;
+}
+
+.experience-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/bg-3.png');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.experience-content {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  padding: 8% 6% 5% 6%;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-content h1 {
+  font-size: 11vw;
+  line-height: 0.8;
+  margin-bottom: 2vh;
+  margin-top: 15vh;
+  letter-spacing: -0.05em;
+  font-weight: 800;
+  color: #fff;
+}
+
+.experience-list {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15%;
+  margin-top: 2vh;
+}
+
+.experience-item {
+  max-width: 420px;
+  text-align: left;
+}
+
+.description-top {
+  font-size: 1.15rem;
+  line-height: 1.3;
+  margin-bottom: 4rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.experience-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.description-bottom {
+  font-size: 1.15rem;
+  line-height: 1.3;
+  color: #fff;
+  font-weight: 400;
+}
+
+.tagline {
+  position: absolute;
+  bottom: 8%;
+  right: 15%;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+}

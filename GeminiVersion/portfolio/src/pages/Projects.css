@@ -1,0 +1,141 @@
+.projects-page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000;
+  display: flex;
+  padding: 15vh 6% 5% 6%;
+  overflow-x: hidden;
+}
+
+.projects-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/bg-4.png');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.projects-content {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 5vh;
+}
+
+.header-section h1 {
+  font-size: 10vw;
+  line-height: 0.85;
+  margin: 0;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+  color: #fff;
+  text-transform: none;
+}
+
+.rewind {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  color: #fff;
+}
+
+.projects-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10%;
+  margin-top: 4rem;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.project-item {
+  max-width: 400px;
+}
+
+.project-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  color: #fff;
+}
+
+.project-description {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: #fff;
+  font-weight: 400;
+}
+
+.bonus-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 2rem;
+}
+
+.bonus-box {
+  max-width: 350px;
+}
+
+.bonus-box h3 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  text-transform: none;
+  font-weight: 800;
+  color: #fff;
+}
+
+.bonus-box p {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.retro-button {
+  background-color: #ccc;
+  color: #000;
+  border: 4px solid #fff;
+  border-right-color: #888;
+  border-bottom-color: #888;
+  padding: 0.6rem 2rem;
+  font-size: 1.4rem;
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 #000;
+  transition: all 0.1s;
+  margin-top: 1rem;
+}
+
+.retro-button:active {
+  box-shadow: 0 0 0 #000;
+  transform: translate(4px, 4px);
+  border-color: #888;
+  border-right-color: #fff;
+  border-bottom-color: #fff;
+}
+
+.tagline {
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #fff;
+}

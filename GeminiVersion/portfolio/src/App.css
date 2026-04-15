@@ -1,0 +1,22 @@
+#root {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+main {
+  width: 100%;
+}
+
+/* Global button reset */
+button {
+  border: none;
+  background: none;
+  font-family: inherit;
+  cursor: pointer;
+}
