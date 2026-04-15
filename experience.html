@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="screen-orientation" content="landscape">
     <title>Experience | Flowin By</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        html, body { width: 100%; height: 100%; }
+        html, body { width: 100%; height: 100%; overflow: hidden; }
         body {
             background: url('Black and White Minimalist Creative Portfolio Presentation - 3.png') center center / cover no-repeat;
         }
@@ -20,9 +21,51 @@
         .nav-about { top: 10%; left: 26.5%; width: 6%; height: 4%; }
         .nav-experience { top: 10%; left: 35%; width: 8%; height: 4%; }
         .nav-projects { top: 16%; left: 75%; width: 14%; height: 5%; }
+
+        /* Rotate device overlay */
+        .rotate-message {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: #fff;
+            z-index: 9999;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            padding: 2rem;
+        }
+        .rotate-message svg {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1.5rem;
+            animation: rotate-hint 2s ease-in-out infinite;
+        }
+        .rotate-message p {
+            font-size: 1.2rem;
+            color: #333;
+        }
+        @keyframes rotate-hint {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(-15deg); }
+            75% { transform: rotate(15deg); }
+        }
+
+        /* Show overlay only in portrait on mobile */
+        @media screen and (max-width: 900px) and (orientation: portrait) {
+            .rotate-message { display: flex; }
+        }
     </style>
 </head>
 <body>
+    <div class="rotate-message">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.5">
+            <rect x="4" y="2" width="16" height="20" rx="2" />
+            <path d="M12 18h.01" />
+        </svg>
+        <p>Please rotate your device to landscape mode</p>
+    </div>
     <a href="index.html" class="nav-home">welcome to my world.</a>
     <a href="about.html" class="nav-about">About Me</a>
     <a href="experience.html" class="nav-experience">Experience</a>
